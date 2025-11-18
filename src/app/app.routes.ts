@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: Contact,
   },
   {
-    path: 'profile',
+    path: 'profile/:userName',
     component: Profile,
   },
 ];
