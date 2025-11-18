@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Contact } from './contact/contact';
 import { Profile } from './profile/profile';
+import { NotFound } from './not-found/not-found';
 
 export const routes: Routes = [
   {
@@ -15,5 +16,10 @@ export const routes: Routes = [
   {
     path: 'profile/:userName',
     component: Profile,
+  },
+  {
+    path: '**',
+    // component: NotFound,
+    redirectTo: '',
   },
 ];
